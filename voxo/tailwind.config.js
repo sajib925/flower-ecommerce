@@ -13,8 +13,9 @@ module.exports = {
       rubik: ["var(--font-rubik)"],
     },
     extend: {
-      color: {
-        "blue": "#1fb6ff",
+      colors: {
+        "primary": "#df4246",
+        "secondary": "#232323",
       },
     },
   },
