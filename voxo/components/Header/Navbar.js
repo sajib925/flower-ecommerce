@@ -1,17 +1,16 @@
-import Link from 'next/link';
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 import {BiChevronDown} from "react-icons/bi";
 
-const Navbar = () => {
+const Navbar = ({handleMobileMenu}) => {
   return (
-    <div>
-      <div className=""></div>
-      <ul className="flex items-center justify-center gap-x-[30px]">
-        <li className="hidden">
-          <div className="">Menu</div>
+    <div className="max-xl:w-[300px] max-xl:ml-auto max-xl:bg-white">
+      <ul className="flex items-center justify-center gap-x-[30px] flex-col xl:flex-row">
+        <li className="block xl:hidden">
+          <div className="" onClick={handleMobileMenu}>Menu</div>
         </li>
         <li className="">
-          <Link href="/" className="navLink">
+          <Link href="/" className="navLink max-xl:inline-flex mx-xl:items-center mx-xl:justify-center">
             Home
             <BiChevronDown size={22} />
           </Link>
@@ -43,6 +42,6 @@ const Navbar = () => {
       </ul>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

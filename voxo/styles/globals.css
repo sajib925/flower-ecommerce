@@ -4,7 +4,7 @@
 
 .btn {
   @apply relative z-[1] text-white bg-transparent  cursor-pointer after:left-0 after:top-0 after:absolute after:w-full after:h-full after:bg-primary after:-z-[1] hover:after:opacity-0 hover:text-secondary 
-    border border-primary  hover:after:scale-50 outline-none after:transition-all duration-500;
+    border border-primary  hover:after:scale-50 outline-none after:ease-in-out after:duration-500;
 }
 
 .navLink {

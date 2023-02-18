@@ -2,9 +2,9 @@ import React from "react";
 import {FiDollarSign} from "react-icons/fi";
 import {TbWorld} from "react-icons/tb";
 import {BiSearch} from "react-icons/bi";
-import {BiUser} from "react-icons/bi"
+import {BiUser} from "react-icons/bi";
 import {IoSettingsOutline} from "react-icons/io5";
-import {CgShoppingCart} from "react-icons/cg"
+import {CgShoppingCart} from "react-icons/cg";
 
 const IconsMenu = () => {
   return (
@@ -27,20 +27,20 @@ const IconsMenu = () => {
         </div>
         <div className="dropdown-menu"></div>
       </li>
-      <li className="dropdown cursor-pointer">
+      <li className="dropdown cursor-pointer hidden sm:block">
         <div className="">
           <BiUser size={22} />
         </div>
         <div className="dropdown-menu"></div>
       </li>
-      <li className="dropdown cursor-pointer">
+      <li className="dropdown cursor-pointer hidden sm:block">
         <div className="">
           <IoSettingsOutline size={22} />
         </div>
         <div className="dropdown-menu"></div>
       </li>
       <li className="dropdown cursor-pointer">
-        <button className="flex items-center gap-[18px] btn py-[14px] px-[30px]">
+        <button className="flex items-center gap-[18px] btn py-[6px] px-[11px] md:py-[7px] lg:px-[14px] xl:py-[10px] xl:px-[20px] 2xl:py-[14px] 2xl:px-[30px]">
           <CgShoppingCart />
           <span>$0.00</span>
         </button>
