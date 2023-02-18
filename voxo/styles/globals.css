@@ -8,9 +8,25 @@
 }
 
 .navLink {
-  @apply flex items-center font-rubik font-medium text-secondary;
+  @apply flex items-center font-rubik font-medium text-secondary max-xl:py-[10px] max-xl:px-[15px] max-xl:flex max-xl:justify-between max-xl:items-center;
+}
+
+.navItem {
+  @apply max-xl:mb-[10px] max-xl:border-b max-xl:border-border-color max-xl:w-[100%] max-xl:pb-[10px];
+}
+
+.dropdown-box {
+  @apply dropdown-menu opacity-0 absolute top-[70px] right-0 min-w-[160px] bg-white ease-in-out duration-500 z-20 shadow-lg invisible;
+}
+.dropdown-item{
+  @apply py-[5px] px-[20px];
+}
+.dropdown-link{
+  @apply text-secondary text-[14px] font-rubik hover:text-primary ease-in-out duration-500;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  top: 40px;
 }
