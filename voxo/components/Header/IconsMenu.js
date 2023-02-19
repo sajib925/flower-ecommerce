@@ -68,7 +68,7 @@ const IconsMenu = () => {
           </ul>
         </div>
       </li>
-      <li className="dropdown cursor-pointer relative">
+      <li className="dropdown cursor-pointer">
         <div className="" onClick={handleSearchPopup}>
           <BiSearch size={22} />
         </div>
@@ -80,7 +80,7 @@ const IconsMenu = () => {
           <SearchPopup handleSearchPopup={handleSearchPopup} />
         </div>
       </li>
-      <li className="dropdown cursor-pointer relative sm:block">
+      <li className="dropdown cursor-pointer relative hidden sm:block">
         <div className="">
           <BiUser size={22} />
         </div>
@@ -104,7 +104,7 @@ const IconsMenu = () => {
           </ul>
         </div>
       </li>
-      <li className="dropdown cursor-pointer relative sm:block">
+      <li className="dropdown cursor-pointer relative hidden sm:block">
         <div className="">
           <IoSettingsOutline size={22} />
         </div>

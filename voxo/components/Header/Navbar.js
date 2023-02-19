@@ -22,7 +22,6 @@ const Navbar = ({handleMobileMenu}) => {
             className="navLink"
           >
             Home
-            <BiChevronDown size={22} />
           </Link>
         </li>
         <li className="navItem">
@@ -46,7 +45,6 @@ const Navbar = ({handleMobileMenu}) => {
         <li className="navItem">
           <Link href="/" className="navLink">
             Blog
-            <BiChevronDown size={22} />
           </Link>
         </li>
       </ul>
